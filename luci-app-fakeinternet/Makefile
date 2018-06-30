@@ -1,5 +1,4 @@
-# Copyright (c) 2017 Stan Grishin (stangri@melmac.net)
-# This is free software, licensed under the GNU General Public License v3.
+# Copyright (c) 2017 Stan Grishin (stangri@melmac.net) This is free software, licensed under the GNU General Public License v3.
 
 include $(TOPDIR)/rules.mk
 
@@ -12,6 +11,6 @@ LUCI_DEPENDS:=+luci +fakeinternet
 LUCI_PKGARCH:=all
 PKG_RELEASE:=1
 
-include ../../luci.mk
+include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
